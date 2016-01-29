@@ -1,0 +1,29 @@
+{
+  "name" : "business-object-type",
+  "type" : "cts_test",
+  "label" : "Test",
+  "parent" : "${contextPath}types/business-objects/xcp_rootbo",
+  "properties" : [ {
+    "name" : "is_true",
+    "label" : "is_true",
+    "type" : "boolean"
+  } ],
+  "links" : [ {
+    "rel" : "self",
+    "href" : "${contextPath}types/business-objects/cts_test"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/instances",
+    "href" : "${contextPath}business-objects/cts_test"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/defaults",
+    "href" : "${contextPath}types/business-objects/cts_test/defaults"
+  }, {
+    "rel" : "type"
+  }, {
+    "rel" : "edit"
+  }, {
+    "rel" : "canonical"
+  }, {
+    "rel" : "http://identifiers.emc.com/linkrel/delete"
+  } ]
+}

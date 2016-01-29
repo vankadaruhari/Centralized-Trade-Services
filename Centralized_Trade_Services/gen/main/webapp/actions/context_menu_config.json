@@ -1,0 +1,177 @@
+{
+  "application-ActionMenu" : [ ],
+  "xcp_task-ItemContextMenu" : [ {
+    "action" : {
+      "actionType" : "xcp_task_gotopage",
+      "text" : "${_UI_nullxcp_task_xcp_task_gotopage_task_actionText}"
+    },
+    "xcpId" : "context_menu_task_gotopage"
+  }, {
+    "action" : {
+      "actionType" : "xcp_acquire_task"
+    },
+    "xcpId" : "context_menu_xcp_acquire_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "CompleteTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_complete_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_complete_task_task_actionText}",
+      "objectTypePropName" : "activity_system_name",
+      "fallbackToDataAction" : true,
+      "fallbackConfig" : {
+        "action" : {
+          "actionType" : "xcp_complete_task",
+          "actionModel" : "complete_task_model",
+          "nextTaskEnabled" : false
+        }
+      }
+    },
+    "xcpId" : "context_menu_xcp_complete_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "RejectTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_reject_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_reject_task_task_actionText}",
+      "objectTypePropName" : "activity_system_name",
+      "fallbackToDataAction" : true,
+      "fallbackConfig" : {
+        "action" : {
+          "actionType" : "xcp_reject_task",
+          "actionModel" : "reject_task_model",
+          "nextTaskEnabled" : false
+        }
+      }
+    },
+    "xcpId" : "context_menu_xcp_reject_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "RepeatTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_repeat_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_repeat_task_task_actionText}",
+      "objectTypePropName" : "activity_system_name",
+      "fallbackToDataAction" : true,
+      "fallbackConfig" : {
+        "action" : {
+          "actionType" : "xcp_repeat_task",
+          "actionModel" : "repeat_task_model",
+          "nextTaskEnabled" : false
+        }
+      }
+    },
+    "xcpId" : "context_menu_xcp_repeat_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "DelegateTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_delegate_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_delegate_task_task_actionText}",
+      "objectTypePropName" : "activity_system_name",
+      "fallbackToDataAction" : true,
+      "fallbackConfig" : {
+        "action" : {
+          "actionType" : "xcp_delegate_task",
+          "actionModel" : "delegate_task_model",
+          "nextTaskEnabled" : false
+        }
+      }
+    },
+    "xcpId" : "context_menu_xcp_delegate_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "AssignTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_assign_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_assign_task_task_actionText}",
+      "objectType" : "xcp_currenttask"
+    },
+    "xcpId" : "context_menu_xcp_assign_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_unassign_task"
+    },
+    "xcpId" : "context_menu_xcp_unassign_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "ReassignTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_reassign_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_reassign_task_task_actionText}",
+      "objectType" : "xcp_currenttask"
+    },
+    "xcpId" : "context_menu_xcp_reassign_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "HoldTask",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_hold_task_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_hold_task_task_actionText}",
+      "objectType" : "xcp_currenttask"
+    },
+    "xcpId" : "context_menu_xcp_hold_task"
+  }, {
+    "action" : {
+      "actionType" : "xcp_action_flow_launcher",
+      "actionFlowType" : "ChangeWorkQueue",
+      "wizardConfig" : {
+        "title" : "${_UI_nullxcp_task_xcp_changeworkqueue_task_wizardTitle}",
+        "modal" : true,
+        "autoScroll" : true,
+        "height" : 450,
+        "width" : 640
+      },
+      "text" : "${_UI_nullxcp_task_xcp_changeworkqueue_task_actionText}",
+      "objectType" : "xcp_currenttask"
+    },
+    "xcpId" : "context_menu_xcp_changeworkqueue"
+  }, {
+    "action" : {
+      "actionType" : "xcp_unhold_task"
+    },
+    "xcpId" : "context_menu_xcp_unhold_task"
+  } ]
+}

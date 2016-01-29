@@ -1,0 +1,99 @@
+{
+  "cls" : "cts_application_parameter",
+  "padding" : "0",
+  "border" : false,
+  "namespace" : "cts",
+  "categoryID" : "com_emc_xcp_artifact_page",
+  "artifactName" : "application_parameter",
+  "pageTitle" : "${_UI_Page_cts_application_parameter_title}",
+  "xtype" : "xcp_form",
+  "items" : [ {
+    "xtype" : "xcp_action_container",
+    "actions" : [ ]
+  }, {
+    "xtype" : "xcp_uievent_publisher",
+    "plugins" : [ {
+      "ptype" : "xcp_publish_uievents",
+      "publish" : [ ]
+    } ]
+  }, {
+    "xcpId" : "column_box",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnhbox",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 50,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "left",
+      "valign" : "bottom",
+      "items" : [ {
+        "xcpId" : "rich_text",
+        "xtype" : "xcp_rich_text",
+        "html" : "${_UI_Page_cts_application_parameter_rich_text_html}",
+        "hideErrorInToolTip" : false,
+        "stopOnValidationFail" : true,
+        "plugins" : [ {
+          "ptype" : "xcp_expression_properties",
+          "expression" : [ {
+            "propertyId" : "mandatory",
+            "setterFunName" : "setMandatory",
+            "etype" : "rich_text_mandatory1",
+            "disableProcessingOnRender" : false,
+            "initialDefaultExprValue" : null
+          } ]
+        } ]
+      } ]
+    } ]
+  }, {
+    "xcpId" : "app_param_container",
+    "xtype" : "xcp_app_param_container"
+  }, {
+    "xcpId" : "column_box1",
+    "xtype" : "xcp_column_box",
+    "collapsible" : false,
+    "collapsed" : false,
+    "collapseFirst" : true,
+    "border" : false,
+    "defaultMargins" : "5",
+    "layout" : "xcp_columnbox",
+    "items" : [ {
+      "xcpId" : "columnhbox1",
+      "xtype" : "xcp_columnhbox",
+      "orientation" : "Horizontal",
+      "width" : "100%",
+      "overflow_x" : "hidden",
+      "labelWidth" : 50,
+      "defaultMargins" : "5",
+      "labelAlign" : "left",
+      "halign" : "right",
+      "valign" : "top",
+      "items" : [ {
+        "xcpId" : "button",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_cts_application_parameter_button_text}",
+        "action" : {
+          "actionType" : "updateparameters"
+        }
+      }, {
+        "xcpId" : "cancel_goto_homepage",
+        "xtype" : "xcp_button",
+        "text" : "${_UI_Page_cts_application_parameter_cancel_goto_homepage_text}",
+        "action" : {
+          "redirectStyle" : "application",
+          "actionType" : "xcp_gotopage",
+          "redirectUrl" : "xcp_user_preferences"
+        }
+      } ]
+    } ]
+  } ]
+}
